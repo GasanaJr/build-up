@@ -54,4 +54,9 @@ public class RoomTransition : MonoBehaviour
         previousButton.gameObject.SetActive(currentRoomIndex > 0);
         nextButton.gameObject.SetActive(currentRoomIndex < roomPositions.Length - 1);
     }
+
+    public void Update()
+    {
+        UpdateButtonVisibility();
+    }
 }
